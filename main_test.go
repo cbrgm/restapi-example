@@ -25,7 +25,7 @@ func TestGetStudiengang(t *testing.T) {
 	}
 
 	var got Studiengang
-	response, err := http.Get("0.0.0.0:8080studiengaenge/1")
+	response, err := http.Get("http://localhost:8080/studiengaenge/1")
 	if err != nil {
 		t.Fatalf("failed to get json, %s", err)
 	}
