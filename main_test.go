@@ -38,7 +38,7 @@ func TestGetStudiengang(t *testing.T) {
 	}
 
 	if !reflect.DeepEqual(want, got) {
-		t.Fatalf("Test failed, want %s, got %s", want, got)
+		t.Fatalf("Test failed, want %+v, got %+v", want, got)
 	}
 }
 
